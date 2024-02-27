@@ -1,0 +1,27 @@
+﻿<Window x:Class="login_Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:login_Application"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Assets/background.jpg"/>
+
+        </StackPanel.Background>
+        <!--<Button
+            x:Name="myButton"
+        </Button>-->
+
+        <TextBlock Text="Username" Width="196" Margin="0,100,0,0"/>
+        <TextBox Width="200" Height="30" />
+        <TextBlock Text="Password" Width="196"/>
+        <TextBox Width="200" Height="30" />
+        <Button Height="42" Width="208" Click="Button_Click" Margin="0,100,0,0">
+            <TextBlock><Hyperlink NavigateUri="https://github.com/MarcusL00"><Run Text="Go to github"/></Hyperlink></TextBlock>
+        </Button>
+
+    </StackPanel>
+</Window>
