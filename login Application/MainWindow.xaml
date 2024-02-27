@@ -11,14 +11,20 @@
             <ImageBrush ImageSource="pack://application:,,,/Assets/background.jpg"/>
 
         </StackPanel.Background>
-        <!--<Button
-            x:Name="myButton"
-        </Button>-->
 
-        <TextBlock Text="Username" Width="196" Margin="0,100,0,0"/>
-        <TextBox Width="200" Height="30" />
-        <TextBlock Text="Password" Width="196"/>
-        <TextBox Width="200" Height="30" />
+        <Label Content="Username:"  Width="196" Margin="0,100,0,0" Foreground="White"/>
+        <Border BorderBrush="Beige" BorderThickness="1" CornerRadius="1" VerticalAlignment="Top" Width="196">
+            <TextBox Width="196" Opacity="0.4"/>
+        </Border>  
+        <!--hej-->
+
+        <Label Content="Password:"  Width="196" Foreground="Red"/>
+
+        <Border BorderBrush="Beige" BorderThickness="1" CornerRadius="1" VerticalAlignment="Top" Width="196">
+
+            <PasswordBox x:Name="passwordBox" VerticalAlignment="Top" Width="196" Opacity="0.4"/>
+        </Border>
+       
         <Button Height="42" Width="208" Click="Button_Click" Margin="0,100,0,0">
             <TextBlock><Hyperlink NavigateUri="https://github.com/MarcusL00"><Run Text="Go to github"/></Hyperlink></TextBlock>
         </Button>
